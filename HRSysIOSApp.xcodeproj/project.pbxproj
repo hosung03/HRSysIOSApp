@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041CC1FF1DF0B93C002F8EFE /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CC1FA1DF0B93C002F8EFE /* Employee.swift */; };
+		041CC2001DF0B93C002F8EFE /* FullTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CC1FB1DF0B93C002F8EFE /* FullTime.swift */; };
+		041CC2011DF0B93C002F8EFE /* PartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CC1FC1DF0B93C002F8EFE /* PartTime.swift */; };
+		041CC2021DF0B93C002F8EFE /* Intern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CC1FD1DF0B93C002F8EFE /* Intern.swift */; };
+		041CC2031DF0B93C002F8EFE /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CC1FE1DF0B93C002F8EFE /* Vehicle.swift */; };
+		041CC2051DF0B98A002F8EFE /* IDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CC2041DF0B98A002F8EFE /* IDisplayable.swift */; };
+		041CC2081DF0E167002F8EFE /* EmployeeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CC2061DF0E167002F8EFE /* EmployeeListController.swift */; };
+		041CC2091DF0E167002F8EFE /* EmployeeListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041CC2071DF0E167002F8EFE /* EmployeeListCell.swift */; };
+		04A449B61E00E4FD004D24E7 /* InfoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A449B51E00E4FD004D24E7 /* InfoListViewController.swift */; };
 		04ACA8511DF065280082E70A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACA8501DF065280082E70A /* AppDelegate.swift */; };
 		04ACA8531DF065280082E70A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACA8521DF065280082E70A /* ViewController.swift */; };
 		04ACA8561DF065280082E70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ACA8541DF065280082E70A /* Main.storyboard */; };
 		04ACA8581DF065280082E70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04ACA8571DF065280082E70A /* Assets.xcassets */; };
 		04ACA85B1DF065280082E70A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04ACA8591DF065280082E70A /* LaunchScreen.storyboard */; };
+		04ACA8631DF0B21A0082E70A /* CountryPickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACA8621DF0B21A0082E70A /* CountryPickerDialog.swift */; };
+		04ACA8651DF0B2220082E70A /* DOBPickerDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04ACA8641DF0B2220082E70A /* DOBPickerDialog.swift */; };
+		04ACA8671DF0B6680082E70A /* Country.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04ACA8661DF0B6680082E70A /* Country.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041CC1FA1DF0B93C002F8EFE /* Employee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		041CC1FB1DF0B93C002F8EFE /* FullTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullTime.swift; sourceTree = "<group>"; };
+		041CC1FC1DF0B93C002F8EFE /* PartTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartTime.swift; sourceTree = "<group>"; };
+		041CC1FD1DF0B93C002F8EFE /* Intern.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Intern.swift; sourceTree = "<group>"; };
+		041CC1FE1DF0B93C002F8EFE /* Vehicle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		041CC2041DF0B98A002F8EFE /* IDisplayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDisplayable.swift; sourceTree = "<group>"; };
+		041CC2061DF0E167002F8EFE /* EmployeeListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListController.swift; sourceTree = "<group>"; };
+		041CC2071DF0E167002F8EFE /* EmployeeListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeListCell.swift; sourceTree = "<group>"; };
+		04A449B51E00E4FD004D24E7 /* InfoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoListViewController.swift; sourceTree = "<group>"; };
 		04ACA84D1DF065280082E70A /* HRSysIOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRSysIOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04ACA8501DF065280082E70A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04ACA8521DF065280082E70A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +43,9 @@
 		04ACA8571DF065280082E70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04ACA85A1DF065280082E70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04ACA85C1DF065280082E70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04ACA8621DF0B21A0082E70A /* CountryPickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPickerDialog.swift; sourceTree = "<group>"; };
+		04ACA8641DF0B2220082E70A /* DOBPickerDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DOBPickerDialog.swift; sourceTree = "<group>"; };
+		04ACA8661DF0B6680082E70A /* Country.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Country.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +78,20 @@
 		04ACA84F1DF065280082E70A /* HRSysIOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				04ACA8661DF0B6680082E70A /* Country.plist */,
+				041CC2041DF0B98A002F8EFE /* IDisplayable.swift */,
+				041CC1FA1DF0B93C002F8EFE /* Employee.swift */,
+				041CC1FB1DF0B93C002F8EFE /* FullTime.swift */,
+				041CC1FC1DF0B93C002F8EFE /* PartTime.swift */,
+				041CC1FD1DF0B93C002F8EFE /* Intern.swift */,
+				041CC1FE1DF0B93C002F8EFE /* Vehicle.swift */,
+				04ACA8641DF0B2220082E70A /* DOBPickerDialog.swift */,
+				04ACA8621DF0B21A0082E70A /* CountryPickerDialog.swift */,
 				04ACA8501DF065280082E70A /* AppDelegate.swift */,
 				04ACA8521DF065280082E70A /* ViewController.swift */,
+				041CC2061DF0E167002F8EFE /* EmployeeListController.swift */,
+				041CC2071DF0E167002F8EFE /* EmployeeListCell.swift */,
+				04A449B51E00E4FD004D24E7 /* InfoListViewController.swift */,
 				04ACA8541DF065280082E70A /* Main.storyboard */,
 				04ACA8571DF065280082E70A /* Assets.xcassets */,
 				04ACA8591DF065280082E70A /* LaunchScreen.storyboard */,
@@ -126,6 +162,7 @@
 				04ACA85B1DF065280082E70A /* LaunchScreen.storyboard in Resources */,
 				04ACA8581DF065280082E70A /* Assets.xcassets in Resources */,
 				04ACA8561DF065280082E70A /* Main.storyboard in Resources */,
+				04ACA8671DF0B6680082E70A /* Country.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +173,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				041CC2051DF0B98A002F8EFE /* IDisplayable.swift in Sources */,
+				041CC2091DF0E167002F8EFE /* EmployeeListCell.swift in Sources */,
+				041CC2031DF0B93C002F8EFE /* Vehicle.swift in Sources */,
 				04ACA8531DF065280082E70A /* ViewController.swift in Sources */,
+				041CC2081DF0E167002F8EFE /* EmployeeListController.swift in Sources */,
+				04A449B61E00E4FD004D24E7 /* InfoListViewController.swift in Sources */,
+				04ACA8631DF0B21A0082E70A /* CountryPickerDialog.swift in Sources */,
 				04ACA8511DF065280082E70A /* AppDelegate.swift in Sources */,
+				041CC2011DF0B93C002F8EFE /* PartTime.swift in Sources */,
+				041CC2001DF0B93C002F8EFE /* FullTime.swift in Sources */,
+				041CC1FF1DF0B93C002F8EFE /* Employee.swift in Sources */,
+				04ACA8651DF0B2220082E70A /* DOBPickerDialog.swift in Sources */,
+				041CC2021DF0B93C002F8EFE /* Intern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +347,7 @@
 				04ACA8611DF065280082E70A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
