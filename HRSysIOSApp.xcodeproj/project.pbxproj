@@ -132,6 +132,7 @@
 				TargetAttributes = {
 					04ACA84C1DF065280082E70A = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 22S9Z5CYHR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -308,6 +309,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22S9Z5CYHR;
 				INFOPLIST_FILE = HRSysIOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hosung.HRSysIOSApp;
@@ -320,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 22S9Z5CYHR;
 				INFOPLIST_FILE = HRSysIOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hosung.HRSysIOSApp;
