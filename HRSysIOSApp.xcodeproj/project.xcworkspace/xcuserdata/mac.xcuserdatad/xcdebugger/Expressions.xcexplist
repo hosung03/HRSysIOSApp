@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "EmployeeListController.prepare(for : UIStoryboardSegue, sender : Any?) -&gt; ():EmployeeListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ViewController.arrEmployee[selectedIndex]">
+            </PersistentString>
+            <PersistentString
+               value = "currentEmployee">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "EmployeeListController.viewDidLoad() -&gt; ():EmployeeListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "curSearchValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.btnAddChange(UIButton) -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "ViewController.arrEmployee[0]">
+            </PersistentString>
+            <PersistentString
+               value = "currentEmployee">
+            </PersistentString>
+            <PersistentString
+               value = "ViewController.arrEmployee">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static ViewController.save() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "empRef">
+            </PersistentString>
+            <PersistentString
+               value = "ViewController.arrEmployee">
+            </PersistentString>
+            <PersistentString
+               value = "currentEmployee">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.load() -&gt; ():ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "isLoad">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
