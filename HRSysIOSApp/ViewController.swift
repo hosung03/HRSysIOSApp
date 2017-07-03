@@ -342,7 +342,6 @@ class ViewController: UIViewController {
         let date = Date()
         let calendar = Calendar.current
         let currentDate = calendar.dateComponents([.year, .month, .day], from: date)
-        
         let age = currentDate.year! - Int(year!)!
         txtAge.text = String(age)
     }
