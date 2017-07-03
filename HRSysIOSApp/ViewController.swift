@@ -143,6 +143,10 @@ class ViewController: UIViewController {
         var msg = ""
         if isEdit {
             if let empRef = currentEmployee as? FullTime {
+                if !isValidRecord(employeeType: 0) {
+                    return
+                }
+                
                 empRef.setName(txtName.text!)
                 empRef.setAge(Int(txtAge.text!)!)
                 empRef.setDOB(txtDOB.text!)
@@ -153,6 +157,10 @@ class ViewController: UIViewController {
                 msg = "FullTime Employee Record is changed"
             }
             else if let empRef = currentEmployee as? PartTime {
+                if !isValidRecord(employeeType: 1) {
+                    return
+                }
+                
                 empRef.setName(txtName.text!)
                 empRef.setAge(Int(txtAge.text!)!)
                 empRef.setDOB(txtDOB.text!)
@@ -163,6 +171,10 @@ class ViewController: UIViewController {
                 msg = "PartTime Employee Record is changed"
             }
             else if let empRef = currentEmployee as? Intern {
+                if !isValidRecord(employeeType: 2) {
+                    return
+                }
+                
                 empRef.setName(txtName.text!)
                 empRef.setAge(Int(txtAge.text!)!)
                 empRef.setDOB(txtDOB.text!)
@@ -183,6 +195,10 @@ class ViewController: UIViewController {
             }
             if ctrlEmpType.selectedSegmentIndex == 0 {
                 // FullTime
+                if !isValidRecord(employeeType: 0) {
+                    return
+                }
+                
                 let ft : FullTime = FullTime(name: txtName.text!, age: Int(txtAge.text!)!, DOB: txtDOB.text!, country: txtCountry.text!, salary: Int(txtSalaryHoursSchool.text!)!, bonus: Int(txtBonusRate.text!)!, pPV: v)
             
                 ViewController.arrEmployee.append(ft)
@@ -193,6 +209,10 @@ class ViewController: UIViewController {
             }
             else if ctrlEmpType.selectedSegmentIndex == 1 {
                 // PartTime
+                if !isValidRecord(employeeType: 1) {
+                    return
+                }
+
                 let pt : PartTime = PartTime(name: txtName.text!, age: Int(txtAge.text!)!, DOB: txtDOB.text!, country: txtCountry.text!, hoursWorked: Int(txtSalaryHoursSchool.text!)!, rate: Int(txtBonusRate.text!)!, pPV: v)
             
                 ViewController.arrEmployee.append(pt)
@@ -203,6 +223,10 @@ class ViewController: UIViewController {
             }
             else if ctrlEmpType.selectedSegmentIndex == 2 {
                 // Intern
+                if !isValidRecord(employeeType: 2) {
+                    return
+                }
+
                 let it : Intern = Intern(name: txtName.text!, age: Int(txtAge.text!)!, DOB: txtDOB.text!, country: txtCountry.text!, collegeName: txtSalaryHoursSchool.text!, pPV: v)
             
                 ViewController.arrEmployee.append(it)
@@ -216,6 +240,55 @@ class ViewController: UIViewController {
         if(msg != ""){
             ViewController.alertMessage(self, strTitle: "Alert", strMessage: msg)
         }
+    }
+    
+    public func isValidRecord (employeeType : Int) -> Bool {
+        var isValid : Bool = true
+        var msg : String = ""
+        
+        if txtName.text == "" {
+            msg = "Please fill Employee's Name "
+            isValid = false
+        }
+        else if txtAge.text == "" {
+            msg = "Please fill Employee's Age "
+            isValid = false
+        }
+        else if txtDOB.text == "" {
+            msg = "Please fill Employee's Date of Birth "
+            isValid = false
+        }
+        else if txtCountry.text == "" {
+            msg = "Please fill Employee's Country "
+            isValid = false
+        }
+        else if txtSalaryHoursSchool.text == "" {
+            if employeeType == 1 {
+                msg = "Please fill Employee's Hours "
+            }
+            else if employeeType == 2 {
+                msg = "Please fill Employee's School "
+            }
+            else {
+                msg = "Please fill Employee's Salary "
+            }
+            isValid = false
+        }
+        else if employeeType != 2 && txtBonusRate.text  == "" {
+            if employeeType == 1 {
+                msg = "Please fill Employee's Bonus "
+            }
+            else {
+                msg = "Please fill Employee's Rate "
+            }
+            isValid = false
+        }
+        
+        if(!isValid) {
+             ViewController.alertMessage(self, strTitle: "Alert", strMessage: msg)
+        }
+        
+        return isValid
     }
     
     public func display (e : Employee?) {
@@ -257,8 +330,21 @@ class ViewController: UIViewController {
     }
     
     @IBAction func btnCalYear(sender: UIButton) {
-        sender.tag = 1
-        self.performSegue(withIdentifier: "payrollSegue", sender: sender)
+        //sender.tag = 1
+        //self.performSegue(withIdentifier: "payrollSegue", sender: sender)
+        if txtDOB.text == "" {
+            ViewController.alertMessage(self, strTitle: "Alert", strMessage: "Please fill Employee's Date of Birth ")
+            return
+        }
+        let dateArr = txtDOB.text?.components(separatedBy: "-")
+        let year = dateArr?[0]
+        
+        let date = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: date)
+        
+        let age = components.year! - Int(year!)!
+        txtAge.text = String(age)
     }
     
     @IBAction func btnSearchByName(_ sender: UIButton) {

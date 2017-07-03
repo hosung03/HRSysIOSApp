@@ -76,7 +76,11 @@ open class Employee : NSObject, NSCoding, IDisplayable {
     }
     
     open func calcBirthYear() -> Int {
-        return (2016 - self.age)
+        let date = Date()
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: date)
+        
+        return (components.year! - self.age)
     }
     
     open func calcEaringings() -> Int {
